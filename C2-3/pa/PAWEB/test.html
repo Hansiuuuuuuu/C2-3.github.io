@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <script src="japa.js" defer></script>
+    <title>Pop-up Box</title>
+</head>
+<body>
+    <button onclick="openMessageBox()">Kirim Pesan</button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup-box" id="popupBox">
+        <span class="close-btn" onclick="closeMessageBox()">&times;</span>
+        <h2>Kirim Pesan</h2>
+        <textarea placeholder="Tulis pesan Anda di sini"></textarea>
+        <button onclick="sendMessage()">Kirim</button>
+    </div>
+</body>
+</html>
